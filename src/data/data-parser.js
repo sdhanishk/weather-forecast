@@ -1,6 +1,4 @@
-import data from './sample-data';
-
-function isDataAvailable() {
+function isDataAvailable(data) {
 
   if (data.cod !== "200") {
     return false;
@@ -10,9 +8,9 @@ function isDataAvailable() {
 
 }
 
-function getLocationFromData() {
+function getLocationFromData(data) {
 
-  if (!isDataAvailable()) {
+  if (!isDataAvailable(data)) {
     return {};
   }
 
@@ -23,11 +21,11 @@ function getLocationFromData() {
 
 }
 
-function getParsedData() {
+function getParsedData(data) {
 
   let parsedData = {};
 
-  if (!isDataAvailable()) {
+  if (!isDataAvailable(data)) {
     return parsedData;
   }
 
@@ -46,7 +44,7 @@ function getParsedData() {
   }
 
   parsedData = {
-    ...getLocationFromData(),
+    ...getLocationFromData(data),
     weatherData
   };
 
@@ -54,9 +52,9 @@ function getParsedData() {
 
 }
 
-function getFiveDaysForecastData() {
+function getFiveDaysForecastData(data) {
 
-  const parsedData = getParsedData();
+  const parsedData = getParsedData(data);
   const keys = Object.keys(parsedData.weatherData);
 
   let fiveDayForecastData = [];

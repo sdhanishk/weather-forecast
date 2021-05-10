@@ -2,9 +2,11 @@ import './index.css';
 import { getFiveDaysForecastData } from '../../data/data-parser';
 import WeatherCard from '../weather-card';
 
-function App() {
+function App(props) {
 
-  const fiveDayForecastData = getFiveDaysForecastData();
+  const { data } = props;
+
+  const fiveDayForecastData = getFiveDaysForecastData(data);
 
   return (
     <div id="weather-cards-container">
