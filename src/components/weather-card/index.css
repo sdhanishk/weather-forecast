@@ -1,0 +1,18 @@
+.weather-card {
+  border: gainsboro 1px solid;
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+}
+
+.normal-and-light {
+  color: gray;
+  font-size: 12px;
+}
+
+.bold-and-bright {
+  font-size: 20px;
+  font-weight: bold;
+}

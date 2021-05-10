@@ -27,8 +27,6 @@ function getParsedData() {
 
   let parsedData = {};
 
-  console.log(data);
-
   if (!isDataAvailable()) {
     return parsedData;
   }
@@ -56,7 +54,23 @@ function getParsedData() {
 
 }
 
+function getFiveDaysForecastData() {
+
+  const parsedData = getParsedData();
+  const keys = Object.keys(parsedData.weatherData);
+
+  let fiveDayForecastData = [];
+
+  for (let index = 0; index < 5; index++) {
+    fiveDayForecastData.push(parsedData.weatherData[keys[index]]);
+  }
+
+  return fiveDayForecastData;
+
+}
+
 export {
   getLocationFromData,
-  getParsedData
+  getParsedData,
+  getFiveDaysForecastData
 };

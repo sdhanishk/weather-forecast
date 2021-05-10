@@ -1,5 +1,7 @@
 #container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #heading {
@@ -18,5 +20,5 @@
 
 #location {
   color: gray;
-  margin-bottom: 20px;
+  margin: auto;
 }
