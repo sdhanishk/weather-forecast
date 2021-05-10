@@ -1,3 +1,22 @@
 #container {
   text-align: center;
 }
+
+#heading {
+  background-color: gainsboro;
+  width: 80%;
+  height: 30vh;
+  min-height: 30px;
+  margin: auto;
+  font-size:calc(12px + 10vmin);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#location {
+  color: gray;
+  margin-bottom: 20px;
+}
