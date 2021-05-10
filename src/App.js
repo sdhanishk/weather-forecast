@@ -1,5 +1,5 @@
 import './App.css';
-import { getParsedData } from './data/data-parser';
+import { getLocationFromData } from './data/data-parser';
 
 function App() {
 
