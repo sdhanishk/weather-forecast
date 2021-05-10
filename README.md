@@ -15,3 +15,5 @@
   ```
   npm start
   ```
+
+![weather-forecast-app-screenshot](https://github.com/sdhanishk/weather-forecast/blob/main/public/images/weather-forecast-screenshot.png?raw=true)
